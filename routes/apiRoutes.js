@@ -4,7 +4,7 @@ module.exports = function(app) {
     app.get("/api/workouts", function(req, res){
         db.find()
         .then(function(records){
-            console.log("Find route",records);
+            console.log("Find route", records);
             res.json(records);
         });
     });
